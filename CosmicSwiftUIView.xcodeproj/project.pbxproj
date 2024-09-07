@@ -14,6 +14,12 @@
 		A1799C1F2C8CB04000ECB72C /* CosmicSwiftUIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C1E2C8CB04000ECB72C /* CosmicSwiftUIViewTests.swift */; };
 		A1799C292C8CB04000ECB72C /* CosmicSwiftUIViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C282C8CB04000ECB72C /* CosmicSwiftUIViewUITests.swift */; };
 		A1799C2B2C8CB04000ECB72C /* CosmicSwiftUIViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C2A2C8CB04000ECB72C /* CosmicSwiftUIViewUITestsLaunchTests.swift */; };
+		A1799C382C8CBDF900ECB72C /* MediaOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C372C8CBDF900ECB72C /* MediaOfTheDayView.swift */; };
+		A1799C3A2C8CBE1400ECB72C /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C392C8CBE1400ECB72C /* MoreView.swift */; };
+		A1799C3C2C8CCB9000ECB72C /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C3B2C8CCB9000ECB72C /* MediaView.swift */; };
+		A1799C412C8CD4E700ECB72C /* CosmicSnapshotRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C3F2C8CD4E700ECB72C /* CosmicSnapshotRequestModel.swift */; };
+		A1799C422C8CD4E700ECB72C /* CosmicSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C402C8CD4E700ECB72C /* CosmicSnapshot.swift */; };
+		A1799C452C8CD84400ECB72C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1799C442C8CD84400ECB72C /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		A1799C242C8CB04000ECB72C /* CosmicSwiftUIViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmicSwiftUIViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1799C282C8CB04000ECB72C /* CosmicSwiftUIViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicSwiftUIViewUITests.swift; sourceTree = "<group>"; };
 		A1799C2A2C8CB04000ECB72C /* CosmicSwiftUIViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicSwiftUIViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1799C372C8CBDF900ECB72C /* MediaOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaOfTheDayView.swift; sourceTree = "<group>"; };
+		A1799C392C8CBE1400ECB72C /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		A1799C3B2C8CCB9000ECB72C /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
+		A1799C3F2C8CD4E700ECB72C /* CosmicSnapshotRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmicSnapshotRequestModel.swift; sourceTree = "<group>"; };
+		A1799C402C8CD4E700ECB72C /* CosmicSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmicSnapshot.swift; sourceTree = "<group>"; };
+		A1799C442C8CD84400ECB72C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,9 @@
 		A1799C0C2C8CB03E00ECB72C /* CosmicSwiftUIView */ = {
 			isa = PBXGroup;
 			children = (
+				A1799C3E2C8CD49B00ECB72C /* View */,
+				A1799C3D2C8CD49200ECB72C /* Model */,
 				A1799C0D2C8CB03E00ECB72C /* CosmicSwiftUIViewApp.swift */,
-				A1799C0F2C8CB03E00ECB72C /* ContentView.swift */,
 				A1799C112C8CB04000ECB72C /* Assets.xcassets */,
 				A1799C132C8CB04000ECB72C /* Preview Content */,
 			);
@@ -125,6 +138,35 @@
 				A1799C2A2C8CB04000ECB72C /* CosmicSwiftUIViewUITestsLaunchTests.swift */,
 			);
 			path = CosmicSwiftUIViewUITests;
+			sourceTree = "<group>";
+		};
+		A1799C3D2C8CD49200ECB72C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1799C402C8CD4E700ECB72C /* CosmicSnapshot.swift */,
+				A1799C3F2C8CD4E700ECB72C /* CosmicSnapshotRequestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1799C3E2C8CD49B00ECB72C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1799C432C8CD83700ECB72C /* Components */,
+				A1799C0F2C8CB03E00ECB72C /* ContentView.swift */,
+				A1799C372C8CBDF900ECB72C /* MediaOfTheDayView.swift */,
+				A1799C3B2C8CCB9000ECB72C /* MediaView.swift */,
+				A1799C392C8CBE1400ECB72C /* MoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1799C432C8CD83700ECB72C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A1799C442C8CD84400ECB72C /* WebView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1799C382C8CBDF900ECB72C /* MediaOfTheDayView.swift in Sources */,
+				A1799C422C8CD4E700ECB72C /* CosmicSnapshot.swift in Sources */,
+				A1799C452C8CD84400ECB72C /* WebView.swift in Sources */,
 				A1799C102C8CB03E00ECB72C /* ContentView.swift in Sources */,
 				A1799C0E2C8CB03E00ECB72C /* CosmicSwiftUIViewApp.swift in Sources */,
+				A1799C3C2C8CCB9000ECB72C /* MediaView.swift in Sources */,
+				A1799C412C8CD4E700ECB72C /* CosmicSnapshotRequestModel.swift in Sources */,
+				A1799C3A2C8CBE1400ECB72C /* MoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
